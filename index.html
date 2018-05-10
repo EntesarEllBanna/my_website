@@ -202,7 +202,22 @@ src="  https://i0.wp.com/dentist2015blog.files.wordpress.com/2017/06/hd_39fd504c
 <a >Designed by Entesar ElBanna last updated_30/1/2018</a> || <a > Website-1-Good luck</a> 
 
   </footer>
-					  
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+		      </script>					  
 </body>
 </html>
   
